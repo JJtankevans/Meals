@@ -14,12 +14,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.pinkAccent,
           secondary: Colors.amber,
-          surface: Color.fromRGBO(255, 254, 229, 1), //substitui o canvasColor
+          surface: Color.fromRGBO(255, 254, 180, 1), //substitui o canvasColor
         ),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
-          titleMedium: const TextStyle(
-            fontSize: 20,
+          titleLarge: const TextStyle(
+            fontSize: 22,
             fontFamily: 'RobotoCondensed',
           ),
         ),
