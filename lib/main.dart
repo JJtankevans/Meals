@@ -3,6 +3,7 @@ import 'package:meals/screens/meal_details_screen.dart';
 import 'screens/category_screen.dart';
 import 'screens/category_meals_screen.dart';
 import 'utils/app-routes.dart';
+import 'screens/tabs_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,6 +17,10 @@ class MyApp extends StatelessWidget {
           secondary: Colors.amber,
           surface: Color.fromRGBO(255, 254, 180, 1), //substitui o canvasColor
         ),
+        tabBarTheme: const TabBarTheme(
+          labelColor: Colors.white,
+          unselectedLabelColor: Colors.black,
+        ),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
           titleLarge: const TextStyle(
@@ -25,7 +30,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       routes: {
-        AppRoutes.HOME: (_) => CategoryScreen(),
+        AppRoutes.HOME: (_) => TabsScreen(),
         AppRoutes.CATEGORIES_MEALS: (context) => CategoryMealsScreen(),
         AppRoutes.MEAL_DETAILS: (context) => MealDetailScreen(),
       },
